@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -23,7 +24,18 @@ namespace _111_1QZ1
 
             for (int i_Ct = 0; i_Ct < 10; i_Ct++)
             {
-                int i_Row = ia_Mlndex;
+                int i_Row = ia_Mlndex / 10;
+                int i_Col = ia_Mlndex % 10;
+                int ia_Map[i_Row, i_Col] = "*";
+            }
+
+            for (int i_Row = 0; i_Row < 10; i_Row++)
+            {
+                for (int i_Col = 0; i_Col < 10; i_Col++)
+                {
+                    Response.Write(ia_Map[i_Row,i_Col]);
+                }
+                Response.Write("<br>")
             }
         }
     }
