@@ -18,15 +18,15 @@ namespace _111_1QZ1
             {
                 for (int i_Col = 0; i_Col < 10; i_Col++)
                 {
-                    ia_Map[i_Row, i_Col] = "O";
+                    ia_Map[i_Row, i_Col] = 'o';
                 }
             }
 
             for (int i_Ct = 0; i_Ct < 10; i_Ct++)
             {
-                int i_Row = ia_Mlndex / 10;
-                int i_Col = ia_Mlndex % 10;
-                int ia_Map[i_Row, i_Col] = "*";
+                int i_Row = ia_Mlndex[i_Ct] / 10;
+                int i_Col = ia_Mlndex[i_Ct] % 10;
+                ia_Map[i_Row, i_Col] = '*';
             }
 
             for (int i_Row = 0; i_Row < 10; i_Row++)
