@@ -14,6 +14,7 @@ namespace _111_1QZ1
         {
             int[] ia_Mlndex = new int[10] { 0, 7, 13, 28, 44, 62, 74, 75, 87, 90 };
             char[,] ia_Map = new char[10, 10];
+            //先訪問全部的二維陣列
             for (int i_Row = 0; i_Row < 10; i_Row++)
             {
                 for (int i_Col = 0; i_Col < 10; i_Col++)
@@ -21,7 +22,7 @@ namespace _111_1QZ1
                     ia_Map[i_Row, i_Col] = 'o';
                 }
             }
-
+            //塞入炸彈位置
             for (int i_Ct = 0; i_Ct < 10; i_Ct++)
             {
                 int i_Row = ia_Mlndex[i_Ct] / 10;
