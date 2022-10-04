@@ -35,9 +35,8 @@ namespace _111_1QZ1
                 for (int i_Col = 0; i_Col < 10; i_Col++)
                 {
                     Response.Write(ia_Map[i_Row,i_Col]);
-                    Response.Write("<br>");
                 }
-                Response.Write("<br>");
+                Response.Write("<br />");
             }
         }
     }
